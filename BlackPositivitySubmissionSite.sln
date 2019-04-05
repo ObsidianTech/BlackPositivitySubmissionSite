@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackPositivitySubmissionSite", "BlackPositivitySubmissionSite\BlackPositivitySubmissionSite.csproj", "{BB9E1C50-FA15-44D1-8820-97E578BB75AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackPositivity.Services", "BlackPositivity.Services\BlackPositivity.Services.csproj", "{6D48698C-6EFA-459D-8796-F9970C89E16A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BB9E1C50-FA15-44D1-8820-97E578BB75AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB9E1C50-FA15-44D1-8820-97E578BB75AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB9E1C50-FA15-44D1-8820-97E578BB75AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D48698C-6EFA-459D-8796-F9970C89E16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D48698C-6EFA-459D-8796-F9970C89E16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D48698C-6EFA-459D-8796-F9970C89E16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D48698C-6EFA-459D-8796-F9970C89E16A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
