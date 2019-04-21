@@ -10,5 +10,6 @@ namespace BlackPositivity.Services.Models
         public string Contributor { get; set; }
         public string Quote { get; set; }
         public bool hasBeenUsed { get; set; }
+        public DateTime DateAdded { get; set; }
     }
 }

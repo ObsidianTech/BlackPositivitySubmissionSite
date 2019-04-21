@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extentions\" />
+    <ProjectReference Include="..\BlackPositivity.Services\BlackPositivity.Services.csproj" />
   </ItemGroup>
 
 </Project>
