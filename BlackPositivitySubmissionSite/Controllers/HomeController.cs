@@ -5,12 +5,27 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BlackPositivitySubmissionSite.Models;
+using BlackPositivity.Services.Abstractions.ServiceAbstractions;
+using BlackPositivity.Services.Models;
 
 namespace BlackPositivitySubmissionSite.Controllers
 {
     public class HomeController : Controller
     {
+        public BlackPositivityQuoteController _bPQC { get; set; }
+
+        public HomeController(IQuoteService qs)
+        {
+            _bPQC = new BlackPositivityQuoteController(qs);
+        }
+
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(BlackPositivtyQuote quote)
         {
             return View();
         }
