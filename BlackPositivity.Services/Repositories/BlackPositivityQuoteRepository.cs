@@ -4,6 +4,7 @@ using BlackPositivity.Services.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace BlackPositivity.Services.Repositories
 {
@@ -16,11 +17,21 @@ namespace BlackPositivity.Services.Repositories
             _context = context;
         }
 
-        public BlackPositivtyQuote AddNewQuote()
+        public async Task<bool> AddNewQuote(BlackPositivtyQuote newQuote)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await _context.BlackPositivityQuotes.AddAsync(newQuote);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
+        #region Not Implemented
         public BlackPositivtyQuote GetNewQuote()
         {
             throw new NotImplementedException();
@@ -30,5 +41,6 @@ namespace BlackPositivity.Services.Repositories
         {
             throw new NotImplementedException();
         }
+        #endregion
     }
 }

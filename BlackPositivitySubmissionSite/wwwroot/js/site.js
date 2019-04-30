@@ -4,7 +4,7 @@
         var con = $("#Contributor").val();
         var quote = $("#Quote").val();
         var quote = {
-            Contributor: con ,
+            Contributor: con,
             Quote: quote
         };
 

@@ -10,6 +10,6 @@ namespace BlackPositivity.Services.DataAccess
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        public DbSet<BlackPositivtyQuote> BlackPositivityQuote { get; set; }
+        public DbSet<BlackPositivtyQuote> BlackPositivityQuotes { get; set; }
     }
 }
