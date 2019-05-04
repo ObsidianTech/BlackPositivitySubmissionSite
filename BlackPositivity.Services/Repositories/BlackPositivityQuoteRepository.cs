@@ -25,7 +25,7 @@ namespace BlackPositivity.Services.Repositories
                 await _context.SaveChangesAsync();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }

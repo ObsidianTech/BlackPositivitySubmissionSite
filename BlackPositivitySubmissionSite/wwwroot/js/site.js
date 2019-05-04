@@ -14,8 +14,11 @@
             data: JSON.stringify(quote),
             contentType: 'application/json; charset=utf-8',
             dataType: "json",
-            success: function (response) {
-                console.log(response.data);
+            success: function (data) {
+                console.log(data.responseText);
+            },
+            error: function (data) {
+                console.log(data.responseText);
             }
         })
     });
