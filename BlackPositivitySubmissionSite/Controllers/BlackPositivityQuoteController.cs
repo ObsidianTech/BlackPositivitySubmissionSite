@@ -25,14 +25,13 @@ namespace BlackPositivitySubmissionSite.Controllers
         [Route("newQuote/")]
         public async Task<IActionResult> newQuote([FromBody] QuoteSubmissionDto quote)
         {
-            var isPersisted = await _qs.AddNewQuote(quote);
-            if (isPersisted)
+            if (await _qs.AddNewQuote(quote))
             {
-                return Ok("Your quote was submitted successfully. Thank you.");
+                return Ok(true);
             }
             else
             {
-                return StatusCode(500, "We're sorry, an unexpected error occurred. Please try again later.");
+                return StatusCode(500, false);
             }
         }
     }

@@ -8,5 +8,6 @@ namespace BlackPositivity.Services.Dtos
     {
         public string Contributor { get; set; }
         public string Quote { get; set; }
+
     }
 }

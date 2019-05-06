@@ -1,8 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<div>
-    <input id="Quote" type="text" name="Quote" />
-    <input id="Contributor" type="text" name="Contributor" />
-    <input id="Submit" type="submit" value="Add New Quote" />
+<div is="hook">
+    <div id="initialView">
+        <input id="Quote" type="text" name="Quote" />
+        <input id="Contributor" type="text" name="Contributor" />
+        <input id="Submit" type="submit" value="Add New Quote" />
+    </div>
+    <div id="success" class="hidden">
+        <p>Your submission was saved successfully. Thank you for your contribution. If you would like to submit again, </p>
+        <a asp-action="Index" asp-controller="Home">please click here</a>
+    </div>
+    <div id="error" class="hidden">
+        <p>Unfortunately, there was an issue with your submission.</p>
+        <a asp-action="Index" asp-controller="Home">Feel free to try again.</a>
+        <p>Or come back at a later time.</p>
+    </div>
 </div>

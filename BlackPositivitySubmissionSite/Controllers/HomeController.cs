@@ -12,20 +12,12 @@ namespace BlackPositivitySubmissionSite.Controllers
 {
     public class HomeController : Controller
     {
-        public BlackPositivityQuoteController _bPQC { get; set; }
 
         public HomeController(IQuoteService qs)
         {
-            _bPQC = new BlackPositivityQuoteController(qs);
         }
 
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Index(BlackPositivtyQuote quote)
         {
             return View();
         }
