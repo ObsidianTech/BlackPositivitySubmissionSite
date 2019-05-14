@@ -2,20 +2,48 @@
     ViewData["Title"] = "Black Positivity";
 }
 
-<div is="hook">
-    <div class="head-quote"><p>“Hold fast to dreams, for if dreams die, life is a broken winged bird that cannot fly.”</p></div>
-    <div id="initialView">
-        <input id="Quote" type="text" name="Quote" />
-        <input id="Contributor" type="text" name="Contributor" />
-        <input id="Submit" type="submit" value="Add New Quote" />
+<div id="hook">
+    <div class="head-quote">
+        <p>“Hold fast to dreams, for if dreams die, 
+            life is a broken winged bird that cannot fly.”<br />
+        </p>
+        <p id="tail"><i>- Langston Hughes, 1926</i></p></div>
+    <div id="welcome" class="welcome">
+        <p>
+            Hello, and welcome to the Black Positivity Submission site. 
+            If you have a quote from a black motivational or inspiratonal figure 
+            (including yourself, if you'd like), feel free to submit one or more of them here.
+        </p>
     </div>
-    <div id="success" class="hidden">
-        <p>Your submission was saved successfully. Thank you for your contribution. If you would like to submit again, </p>
-        <a asp-action="Index" asp-controller="Home">please click here</a>
+    <div id="initialView" class="submission">
+        <h3>Quote</h3>
+        <input class="entry1" id="Quote" name="Quote" />
+        <h3>Contributor</h3>
+        <input class="entry2" id="Contributor" type="text" name="Contributor" />
+        <input class="submit" id="Submit" type="submit" value="Add New Quote" />
+        <div hidden id="fountainG" style="margin-top: 15px;">
+            <div id="fountainG_1" class="fountainG"></div>
+            <div id="fountainG_2" class="fountainG"></div>
+            <div id="fountainG_3" class="fountainG"></div>
+            <div id="fountainG_4" class="fountainG"></div>
+            <div id="fountainG_5" class="fountainG"></div>
+            <div id="fountainG_6" class="fountainG"></div>
+            <div id="fountainG_7" class="fountainG"></div>
+            <div id="fountainG_8" class="fountainG"></div>
+        </div>
     </div>
-    <div id="error" class="hidden">
-        <p>Unfortunately, there was an issue with your submission.</p>
-        <a asp-action="Index" asp-controller="Home">Feel free to try again.</a>
-        <p>Or come back at a later time.</p>
+    <div class="results">
+        <div id="success" class="hidden">
+            <p>
+                Your submission was saved successfully.
+                Thank you for your contribution. 
+            </p>
+            <a asp-action="Index" asp-controller="Home" class="return">If you would like to submit again, please click here.</a>
+        </div>
+        <div id="error" class="hidden">
+            <p>Unfortunately, there was an issue with your submission.</p>
+            <a asp-action="Index" asp-controller="Home" class="return">Feel free to try again.</a>
+            <p>Or come back at a later time.</p>
+        </div>
     </div>
 </div>
