@@ -1,10 +1,9 @@
 ﻿$(document).ready(function () {
-    const con = $("#Contributor").val();
-    const newQuote = $("#Quote").val();
-    const fountainG = $("#fountainG");
     $("#Submit").on('click', function (event) {
+        const con = $("#Contributor").val();
+        const newQuote = $("#Quote").val();
         event.preventDefault();
-        fountainG.show();
+        $("#fountainG").show();
         const quote = {
             Contributor: con,
             Quote: newQuote
@@ -30,7 +29,8 @@
         const welcomeView = $("#welcome");
         const errorView = $("#error");
 
-        fountainG.hide();
+
+        $("#fountainG").hide();
 
         if (success) {
             welcomeView.addClass('hidden');
