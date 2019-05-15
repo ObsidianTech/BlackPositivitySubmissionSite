@@ -87,3 +87,14 @@
         color: #535353;
         text-decoration: none;
     }
+
+@media only screen and (max-width: 830px) {
+
+    .welcome {
+        font-size: 13px;
+    }
+
+    .head-quote p {
+        font-size: 25px;
+    }
+}
